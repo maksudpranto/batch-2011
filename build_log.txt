@@ -1,0 +1,21 @@
+
+> batch-11@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.1.7
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./app/keystatic/page.tsx
+Module not found: Package path ./app is not exported from package E:\SELF_Projects\batch_11\node_modules\@keystatic\next (see exports field in E:\SELF_Projects\batch_11\node_modules\@keystatic\next\package.json)
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/keystatic/page.tsx
+Module not found: Can't resolve '../../../keystatic.config'
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+> Build failed because of webpack errors

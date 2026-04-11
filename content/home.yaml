@@ -1,0 +1,6 @@
+pageBadge: the official batch directory test
+heroImage: /images/home/heroImage.png
+stats:
+  - number: '5'
+    label: Test1
+features: []

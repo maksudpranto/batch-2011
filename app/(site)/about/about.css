@@ -1,0 +1,100 @@
+.decoration-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.decoration-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.15), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.document-container {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 4rem;
+  position: relative;
+}
+
+/* Beautiful prose styling for DocumentRenderer output */
+.prose {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: var(--text-main);
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  font-family: 'Outfit', sans-serif;
+}
+
+.prose h1 { font-size: 2.5rem; }
+.prose h2 { font-size: 2rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; }
+
+.prose p {
+  margin-bottom: 1.5em;
+}
+
+.prose a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-decoration-color: rgba(99, 102, 241, 0.4);
+  transition: var(--transition);
+}
+
+.prose a:hover {
+  color: var(--accent-secondary);
+  text-decoration-color: var(--accent-secondary);
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--accent-primary);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: rgba(248, 250, 252, 0.8);
+  background: linear-gradient(to right, rgba(99, 102, 241, 0.1), transparent);
+  padding: 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border: 1px solid var(--glass-border);
+}
+
+.prose hr {
+  border: 0;
+  height: 1px;
+  background: var(--glass-border);
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .document-container {
+    padding: 2rem;
+  }
+}

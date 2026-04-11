@@ -1,0 +1,97 @@
+.contact-page {
+  padding-bottom: 8rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.info-card .icon {
+  font-size: 1.8rem;
+  background: var(--glass-bg);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+}
+
+.info-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.submission-form {
+  padding: 3rem;
+  position: relative;
+}
+
+.submission-form::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--accent-gradient);
+}
+
+.form-description {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.modern-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .submission-form {
+    padding: 2rem;
+  }
+}
