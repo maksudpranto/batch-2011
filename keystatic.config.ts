@@ -116,6 +116,7 @@ export default config({
         twitter: fields.url({ label: 'Twitter URL' }),
         instagram: fields.url({ label: 'Instagram URL' }),
         whatsapp: fields.url({ label: 'WhatsApp URL' }),
+        showOnHomepage: fields.checkbox({ label: 'Show on Homepage', defaultValue: false }),
       },
     }),
     gallery: collection({
@@ -131,6 +132,7 @@ export default config({
           validation: { isRequired: true },
         }),
         caption: fields.text({ label: 'Caption' }),
+        showOnHomepage: fields.checkbox({ label: 'Show on Homepage', defaultValue: false }),
       },
     }),
   },

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="footer shadow-lg mt-auto">
+    <footer className="footer mt-auto">
       <div className="container footer-content">
         <div className="footer-info">
           <Link href="/" className="logo-footer">

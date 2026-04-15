@@ -1,6 +1,25 @@
 pageBadge: the official batch directory test
 heroImage: /images/home/heroImage.png
-stats:
-  - number: '5'
-    label: Test1
+stats: []
 features: []
+historyTitle: Our Legacy Test
+historyContent: >-
+  📜 Introduction
+
+
+  Kashiani G.C. Pilot High School, located in Kashiani Upazila of Gopalganj
+  District, is one of the most recognized secondary educational institutions in
+  the region. Over the years, it has served as a cornerstone of academic
+  development for students from Kashiani and surrounding rural communities.
+
+
+  🏛️ Early Establishment and Background
+
+
+  The school was established with the vision of expanding accessible secondary
+  education in Kashiani at a time when structured schooling opportunities in
+  rural Bangladesh were still limited. Local education enthusiasts, community
+  leaders, and stakeholders contributed to the foundation of the institution
+  with the aim of creating a sustainable academic environment for future
+  generations.
+historyImage: /images/home/historyImage.jpg

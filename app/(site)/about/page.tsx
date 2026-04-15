@@ -7,6 +7,8 @@ export default async function About() {
   
   if (!data) return <div className="page-header"><div className="container"><h1>Loading...</h1></div></div>;
 
+  const content = await data.content();
+
   return (
     <div className="about-page">
       <div className="page-header decoration-bg">
@@ -20,7 +22,7 @@ export default async function About() {
       <div className="container">
         <div className="glass-panel document-container">
           <div className="prose document-content">
-            <DocumentRenderer document={data.content} />
+            <DocumentRenderer document={content} />
           </div>
         </div>
       </div>

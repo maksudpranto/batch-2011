@@ -28,15 +28,20 @@ export default async function Home() {
   const stats = (data?.stats && data.stats.length > 0) ? data.stats : defaultStats;
   const features = (data?.features && data.features.length > 0) ? data.features : defaultFeatures;
 
-  const recentMembers = membersData.slice(0, 8);
-  const recentGallery = galleryData.slice(0, 8);
+  const recentMembers = membersData.filter(m => m.entry.showOnHomepage).slice(0, 8);
+  const recentGallery = galleryData.filter(g => g.entry.showOnHomepage).slice(0, 8);
 
   return (
     <div className="home-page">
       <section className="hero">
+        <div className="hero-background-effects">
+          <div className="decoration-orb orb-1"></div>
+          <div className="decoration-orb orb-2"></div>
+          <div className="grid-pattern"></div>
+        </div>
+        
         <div className="container hero-container">
           <div className="hero-content">
-
             <h1>
               <span className="text-gradient">{data?.heroTitle || "Batch '11"}</span> 
               <br /> {data?.heroTitleExtended || "Legacy & Legends."}
@@ -64,7 +69,7 @@ export default async function Home() {
           </div>
           
           <div className="hero-visual">
-            <div className="glass-panel image-wrapper">
+            <div className="image-wrapper glass-panel">
               {data?.heroImage ? (
                 <Image 
                   src={data.heroImage} 
@@ -77,11 +82,11 @@ export default async function Home() {
                 <div className="hero-image placeholder" />
               )}
             </div>
-            <div className="decoration-orb orb-1"></div>
-            <div className="decoration-orb orb-2"></div>
           </div>
         </div>
       </section>
+      
+      <div className="section-divider" />
       
       <section className="history-section container">
         <div className="glass-panel history-grid">
@@ -109,6 +114,8 @@ export default async function Home() {
         </div>
       </section>
 
+      <div className="section-divider" />
+      
       <section className="features-section container">
         <div className="feature-grid">
           {features.map((feat, i) => (
@@ -122,6 +129,8 @@ export default async function Home() {
         </div>
       </section>
 
+      <div className="section-divider" />
+      
       {(recentMembers.length > 0 || recentGallery.length > 0) && (
         <section className="glimpses-section container">
           {recentMembers.length > 0 && (
@@ -138,8 +147,12 @@ export default async function Home() {
             </div>
           )}
 
+          {recentMembers.length > 0 && recentGallery.length > 0 && (
+            <div className="section-divider" style={{ margin: '8rem 0', opacity: 0.1 }} />
+          )}
+
           {recentGallery.length > 0 && (
-            <div className="glimpse-block" style={{ marginTop: '4rem' }}>
+            <div className="glimpse-block">
               <div className="glimpses-header">
                 <h2>Recent Memories</h2>
                 <Link href="/gallery" className="btn btn-secondary">View Gallery</Link>
