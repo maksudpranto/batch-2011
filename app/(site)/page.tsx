@@ -98,9 +98,6 @@ export default async function Home() {
             <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', lineHeight: '1.8', marginBottom: '2rem' }}>
               {data?.historyContent || "Founded in the heart of our community, our school has built a tradition of excellence, shaping the minds of thousands of students who went on to become legends in their fields. Batch '11 remains one of the most distinguished chapters of this history."}
             </p>
-            <div>
-              <Link href="/about" className="btn btn-secondary">Read Full Story</Link>
-            </div>
           </div>
           <div className="history-img-col">
             {data?.historyImage ? (

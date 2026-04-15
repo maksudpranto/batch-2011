@@ -1,25 +1,33 @@
 pageBadge: the official batch directory test
 heroImage: /images/home/heroImage.png
-stats: []
+stats:
+  - number: '15'
+    label: Years
+  - number: '50 + '
+    label: Members
+  - number: Infinite
+    label: Memories
 features: []
-historyTitle: Our Legacy Test
+historyTitle: Kashiani G.C. Pilot High School
 historyContent: >-
-  📜 Introduction
+  Kashiani G.C. Pilot High School, established in 1902, has long stood as a
+  pillar of education in the Kashiani region of Gopalganj. Founded with a vision
+  to spread knowledge and shape young minds, the school has played a vital role
+  in nurturing generations of students with strong values, discipline, and
+  ambition.
 
 
-  Kashiani G.C. Pilot High School, located in Kashiani Upazila of Gopalganj
-  District, is one of the most recognized secondary educational institutions in
-  the region. Over the years, it has served as a cornerstone of academic
-  development for students from Kashiani and surrounding rural communities.
+  From its early days, the institution grew through the dedication of passionate
+  teachers and the unwavering support of the local community. What began as a
+  modest initiative gradually evolved into one of the most respected educational
+  institutions in the area. Over the years, the school has not only focused on
+  academic excellence but also encouraged cultural, social, and moral
+  development among its students.
 
 
-  🏛️ Early Establishment and Background
-
-
-  The school was established with the vision of expanding accessible secondary
-  education in Kashiani at a time when structured schooling opportunities in
-  rural Bangladesh were still limited. Local education enthusiasts, community
-  leaders, and stakeholders contributed to the foundation of the institution
-  with the aim of creating a sustainable academic environment for future
-  generations.
+  Thousands of students have passed through its classrooms, carrying forward the
+  lessons, memories, and spirit of the school into different walks of life.
+  Today, Kashiani G.C. Pilot High School continues its journey with
+  pride—honoring its rich legacy while inspiring future generations to dream
+  bigger and achieve more.
 historyImage: /images/home/historyImage.jpg

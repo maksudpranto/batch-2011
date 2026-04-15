@@ -27,7 +27,6 @@ const Navbar = () => {
           <Link href="/members" onClick={() => setIsOpen(false)}>Members</Link>
           <Link href="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link href="/keystatic" className="btn btn-primary admin-btn" onClick={() => setIsOpen(false)}>Admin</Link>
         </div>
       </div>
     </nav>

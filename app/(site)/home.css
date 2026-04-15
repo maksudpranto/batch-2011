@@ -223,25 +223,18 @@
 }
 
 .history-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  min-height: 400px;
-}
-
-@media (min-width: 768px) {
-  .history-grid {
-    grid-template-columns: 1.1fr 1fr;
-  }
 }
 
 .history-text-col {
-  padding: 3rem 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  order: 2;
 }
 
 @media (min-width: 768px) {
@@ -252,8 +245,16 @@
 
 .history-img-col {
   position: relative;
-  min-height: 350px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background-color: rgba(0,0,0,0.03);
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .history-img-col {
+    aspect-ratio: 21 / 9;
+  }
 }
 
 .history-image {
