@@ -1,9 +1,12 @@
 import { config, fields, singleton, collection } from '@keystatic/core';
 
 export default config({
-  storage: {
-    kind: 'local',
-  },
+  storage: process.env.NODE_ENV === 'development'
+    ? { kind: 'local' }
+    : {
+        kind: 'github',
+        repo: 'maksudpranto/batch-2011',
+      },
   singletons: {
     home: singleton({
       label: 'Home',
