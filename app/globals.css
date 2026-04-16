@@ -56,8 +56,14 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 /* Glassmorphism utility */
@@ -336,7 +342,7 @@ main {
 }
 
 .page-header h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 6vw, 3.5rem);
   margin-bottom: 1rem;
 }
 
@@ -383,10 +389,6 @@ main {
   .admin-btn {
     margin-top: 1rem;
     width: 80%;
-  }
-
-  .page-header h1 {
-    font-size: 2.5rem;
   }
 }
 
@@ -441,7 +443,7 @@ main {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 2rem;
 }
 
