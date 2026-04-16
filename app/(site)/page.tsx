@@ -92,12 +92,14 @@ export default async function Home() {
         <div className="glass-panel history-grid">
           <div className="history-text-col">
             <div className="decoration-orb orb-1" style={{ width: '150px', height: '150px', top: '-50px', left: '-50px', opacity: 0.3 }}></div>
-            <h2 style={{ fontSize: '2.5rem', fontFamily: "'Outfit', sans-serif", marginBottom: '1.5rem' }}>
+            <h2 className="history-title">
               <span className="text-gradient">{data?.historyTitle || "Our Legacy"}</span>
             </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', lineHeight: '1.8', marginBottom: '2rem' }}>
-              {data?.historyContent || "Founded in the heart of our community, our school has built a tradition of excellence, shaping the minds of thousands of students who went on to become legends in their fields. Batch '11 remains one of the most distinguished chapters of this history."}
-            </p>
+            <div className="history-content-wrapper">
+              <p className="history-paragraph">
+                {data?.historyContent || "Founded in the heart of our community, our school has built a tradition of excellence, shaping the minds of thousands of students who went on to become legends in their fields. Batch '11 remains one of the most distinguished chapters of this history."}
+              </p>
+            </div>
           </div>
           <div className="history-img-col">
             {data?.historyImage ? (
