@@ -96,6 +96,7 @@
 
 .rmc-img {
   object-fit: cover !important;
+  object-position: top center !important;
   transition: transform 0.5s ease;
 }
 
